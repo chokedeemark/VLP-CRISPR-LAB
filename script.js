@@ -131,7 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(labGallery && scrollLeftBtn && scrollRightBtn) {
         scrollLeftBtn.addEventListener('click', () => {
-            // Scroll by exactly one container width (3 images)
             labGallery.scrollBy({ left: -labGallery.clientWidth, behavior: 'smooth' });
         });
 
@@ -139,4 +138,28 @@ document.addEventListener('DOMContentLoaded', () => {
             labGallery.scrollBy({ left: labGallery.clientWidth, behavior: 'smooth' });
         });
     }
+
+    // Scroll spy: highlight active mobile compact nav link
+    const sections = document.querySelectorAll('section[id], footer[id]');
+    const mobileCompactLinks = document.querySelectorAll('.mobile-compact-link');
+
+    function updateActiveLink() {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            if (window.scrollY >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        mobileCompactLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateActiveLink, { passive: true });
+    updateActiveLink(); // run on load
 });

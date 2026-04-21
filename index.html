@@ -30,30 +30,41 @@
 <body class="bg-obsidian text-gray-200 font-sans antialiased overflow-x-hidden selection:bg-neonCyan selection:text-obsidian">
 
     <!-- Navigation -->
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-obsidian/80 backdrop-blur-md border-b border-white/5 py-4">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center">
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-obsidian/80 backdrop-blur-md border-b border-white/5">
+
+        <!-- Row 1: Logo + Partners (all screens) -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-3 md:py-4">
             <div class="flex items-center gap-4">
-                <div class="text-3xl font-bold tracking-tighter text-white lg:border-r lg:border-white/20 lg:pr-4">
-                    <span class="text-neonCyan">CRISPR</span>LAB
+                <div class="text-2xl md:text-3xl font-bold tracking-tighter text-white lg:border-r lg:border-white/20 lg:pr-4">
+                    <span class="text-electricPurple">BS</span><span class="text-neonCyan">-CRISPR</span>LAB
                 </div>
-                <!-- Partner Logos & Abbreviations -->
-                <div class="hidden lg:flex items-center gap-4 text-xs font-bold tracking-wider text-gray-400">
-                    <div class="flex items-center gap-1.5 hover:text-white transition-colors cursor-default" title="National Science and Technology Development Agency">
-                        <svg class="w-5 h-5 text-neonCyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                <!-- Partner Logos & Abbreviations (desktop only) -->
+                <div class="hidden lg:flex items-center gap-3 text-[10px] font-bold tracking-wider text-gray-400">
+                    <div class="flex items-center gap-1 hover:text-white transition-colors cursor-default" title="National Science and Technology Development Agency">
+                        <svg class="w-3.5 h-3.5 text-neonCyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
                         NSTDA
                     </div>
-                    <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
-                    <div class="flex items-center gap-1.5 hover:text-white transition-colors cursor-default" title="Siriraj Hospital">
-                        <svg class="w-5 h-5 text-biotechGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    <div class="w-1 h-1 rounded-full bg-white/20"></div>
+                    <div class="flex items-center gap-1 hover:text-white transition-colors cursor-default" title="Siriraj Hospital">
+                        <svg class="w-3.5 h-3.5 text-biotechGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                         SIRIRAJ
                     </div>
-                    <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
-                    <div class="flex items-center gap-1.5 hover:text-white transition-colors cursor-default" title="ALPHABET BIOSCIENCE CO., LTD.">
-                        <svg class="w-5 h-5 text-electricPurple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <div class="w-1 h-1 rounded-full bg-white/20"></div>
+                    <div class="flex items-center gap-1 hover:text-white transition-colors cursor-default" title="ALPHABET BIOSCIENCE CO., LTD.">
+                        <svg class="w-3.5 h-3.5 text-electricPurple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         ALPHABET
                     </div>
                 </div>
             </div>
+
+            <!-- Partner badges on mobile (top-right) -->
+            <div class="flex lg:hidden items-center gap-2 text-[9px] font-bold tracking-wider text-gray-500">
+                <span class="flex items-center gap-0.5"><span class="w-1.5 h-1.5 rounded-full bg-neonCyan"></span>NSTDA</span>
+                <span class="flex items-center gap-0.5"><span class="w-1.5 h-1.5 rounded-full bg-biotechGreen"></span>SIRIRAJ</span>
+                <span class="flex items-center gap-0.5"><span class="w-1.5 h-1.5 rounded-full bg-electricPurple"></span>ALPHABET</span>
+            </div>
+
+            <!-- Desktop nav links -->
             <div class="hidden md:flex space-x-8 text-base font-semibold tracking-wide">
                 <a href="#hero" class="hover:text-neonCyan transition-colors">Home</a>
                 <a href="#research" class="hover:text-neonCyan transition-colors">Research</a>
@@ -63,10 +74,24 @@
                 <a href="#contact" class="hover:text-neonCyan transition-colors">Contact</a>
             </div>
         </div>
+
+        <!-- Row 2: Mobile nav links (compact, always visible, hidden on md+) -->
+        <div class="md:hidden border-t border-white/5 bg-obsidian/60">
+            <div class="flex justify-between items-center px-2 py-1.5 overflow-x-auto scrollbar-hide">
+                <a href="#hero" class="mobile-compact-link flex-shrink-0 text-[10px] font-semibold tracking-wide text-gray-400 hover:text-neonCyan transition-colors px-2 py-1 rounded-md hover:bg-white/5">Home</a>
+                <a href="#research" class="mobile-compact-link flex-shrink-0 text-[10px] font-semibold tracking-wide text-gray-400 hover:text-neonCyan transition-colors px-2 py-1 rounded-md hover:bg-white/5">Research</a>
+                <a href="#lab" class="mobile-compact-link flex-shrink-0 text-[10px] font-semibold tracking-wide text-gray-400 hover:text-neonCyan transition-colors px-2 py-1 rounded-md hover:bg-white/5">Lab</a>
+                <a href="#team" class="mobile-compact-link flex-shrink-0 text-[10px] font-semibold tracking-wide text-gray-400 hover:text-neonCyan transition-colors px-2 py-1 rounded-md hover:bg-white/5">Team</a>
+                <a href="#publications" class="mobile-compact-link flex-shrink-0 text-[10px] font-semibold tracking-wide text-gray-400 hover:text-neonCyan transition-colors px-2 py-1 rounded-md hover:bg-white/5">Publications</a>
+                <a href="#contact" class="mobile-compact-link flex-shrink-0 text-[10px] font-semibold tracking-wide text-gray-400 hover:text-neonCyan transition-colors px-2 py-1 rounded-md hover:bg-white/5">Contact</a>
+            </div>
+        </div>
+
     </nav>
 
+
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-28 md:pt-20 overflow-hidden">
         
         <!-- Background Image Integration -->
         <div class="absolute inset-0 z-0">
@@ -83,17 +108,17 @@
             <div class="inline-block px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-xs font-semibold tracking-wider text-neonCyan uppercase mb-6">
                 BIOTEC / NSTDA
             </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8 leading-tight">
+            <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 md:mb-8 leading-tight">
                 Next-Gen <span class="text-transparent bg-clip-text bg-gradient-to-r from-neonCyan to-electricPurple">VLP Gene Editing</span>
             </h1>
-            <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+            <p class="text-base sm:text-lg md:text-xl text-gray-400 mb-8 md:mb-10 max-w-2xl mx-auto font-light leading-relaxed">
                 Pioneering the future of targeted therapeutics through advanced CRISPR-Cas systems and viral-like particle delivery platforms.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#research" class="px-8 py-4 rounded-lg bg-neonCyan text-obsidian font-bold hover:bg-white transition-all shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:shadow-[0_0_30px_rgba(0,240,255,0.6)]">
+            <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+                <a href="#research" class="px-6 py-3 sm:px-8 sm:py-4 rounded-lg bg-neonCyan text-obsidian font-bold hover:bg-white transition-all shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:shadow-[0_0_30px_rgba(0,240,255,0.6)] text-sm sm:text-base">
                     Explore Research
                 </a>
-                <a href="#contact" class="px-8 py-4 rounded-lg bg-charcoal border border-white/10 text-white font-medium hover:bg-white/5 transition-all">
+                <a href="#contact" class="px-6 py-3 sm:px-8 sm:py-4 rounded-lg bg-charcoal border border-white/10 text-white font-medium hover:bg-white/5 transition-all text-sm sm:text-base">
                     Partner With Us
                 </a>
             </div>
@@ -101,15 +126,15 @@
     </section>
 
     <!-- Core Research Areas -->
-    <section id="research" class="py-24 relative">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Core <span class="text-neonCyan">Research</span> Areas</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">Advancing biotechnology through precise genome engineering and novel delivery mechanisms.</p>
+    <section id="research" class="py-16 md:py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 md:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-3 md:mb-4">Core <span class="text-neonCyan">Research</span> Areas</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">Advancing biotechnology through precise genome engineering and novel delivery mechanisms.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
                 <!-- Card 1 -->
-                <div class="research-card group bg-charcoal rounded-2xl p-8 border border-white/5 hover:border-neonCyan/50 transition-all duration-300 relative overflow-hidden">
+                <div class="research-card group bg-charcoal rounded-2xl p-6 sm:p-8 border border-white/5 hover:border-neonCyan/50 transition-all duration-300 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-neonCyan/10 rounded-full blur-3xl -mr-16 -mt-16 transition-all group-hover:bg-neonCyan/20 pointer-events-none"></div>
                     <div class="w-12 h-12 rounded-xl bg-neonCyan/10 flex items-center justify-center mb-6 text-neonCyan">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
@@ -121,7 +146,7 @@
                     </a>
                 </div>
                 <!-- Card 2 -->
-                <div class="research-card group bg-charcoal rounded-2xl p-8 border border-white/5 hover:border-electricPurple/50 transition-all duration-300 relative overflow-hidden">
+                <div class="research-card group bg-charcoal rounded-2xl p-6 sm:p-8 border border-white/5 hover:border-electricPurple/50 transition-all duration-300 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-electricPurple/10 rounded-full blur-3xl -mr-16 -mt-16 transition-all group-hover:bg-electricPurple/20 pointer-events-none"></div>
                     <div class="w-12 h-12 rounded-xl bg-electricPurple/10 flex items-center justify-center mb-6 text-electricPurple">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
@@ -133,7 +158,7 @@
                     </a>
                 </div>
                 <!-- Card 3 -->
-                <div class="research-card group bg-charcoal rounded-2xl p-8 border border-white/5 hover:border-biotechGreen/50 transition-all duration-300 relative overflow-hidden">
+                <div class="research-card group bg-charcoal rounded-2xl p-6 sm:p-8 border border-white/5 hover:border-biotechGreen/50 transition-all duration-300 relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-32 h-32 bg-biotechGreen/10 rounded-full blur-3xl -mr-16 -mt-16 transition-all group-hover:bg-biotechGreen/20 pointer-events-none"></div>
                     <div class="w-12 h-12 rounded-xl bg-biotechGreen/10 flex items-center justify-center mb-6 text-biotechGreen">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
@@ -149,12 +174,12 @@
     </section>
 
     <!-- The Lab Gallery -->
-    <section id="lab" class="py-24 bg-charcoal/50 border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-8 gap-4">
+    <section id="lab" class="py-16 md:py-24 bg-charcoal/50 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-6 md:mb-8 gap-4">
                 <div>
-                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">State-of-the-Art <span class="text-electricPurple">Facilities</span></h2>
-                    <p class="text-gray-400 max-w-xl">Equipped with cutting-edge analytical and molecular tools for comprehensive gene editing research.</p>
+                    <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-3 md:mb-4">State-of-the-Art <span class="text-electricPurple">Facilities</span></h2>
+                    <p class="text-gray-400 max-w-xl text-sm sm:text-base">Equipped with cutting-edge analytical and molecular tools for comprehensive gene editing research.</p>
                 </div>
                 <div class="flex items-center gap-4">
                     <div class="hidden md:flex items-center text-gray-500 text-sm">
@@ -267,74 +292,74 @@
     </section>
 
     <!-- Our Scientists -->
-    <section id="team" class="py-24 relative">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Our <span class="text-biotechGreen">Scientists</span></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">A multidisciplinary team of molecular biologists, virologists, and bioinformaticians.</p>
+    <section id="team" class="py-16 md:py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 md:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-3 md:mb-4">Our <span class="text-biotechGreen">Scientists</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">A multidisciplinary team of molecular biologists, virologists, and bioinformaticians.</p>
             </div>
             
-            <div class="flex flex-wrap justify-center gap-8">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
                 <!-- Profile 1 -->
-                <div class="team-card text-center group w-full sm:w-1/2 md:w-1/4 lg:w-1/6 min-w-[200px]">
-                    <div class="relative w-40 h-40 mx-auto mb-6 rounded-full p-1 bg-gradient-to-tr from-neonCyan to-electricPurple">
+                <div class="team-card text-center group">
+                    <div class="relative w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 mx-auto mb-4 sm:mb-6 rounded-full p-1 bg-gradient-to-tr from-neonCyan to-electricPurple">
                         <img src="https://www.biotec.or.th/home/wp-content/uploads/elementor/thumbs/003193-pwirwudgfxbz4xiow6hfd54yt0mf5q61beuf30v3ac.jpg" alt="บรรพท ศิริเดชาดิลก" class="w-full h-full object-cover rounded-full border-4 border-obsidian">
                     </div>
-                    <h4 class="text-lg font-bold text-white mb-1">บรรพท ศิริเดชาดิลก<br><span class="text-sm font-medium text-gray-400">Bunpote Siridechadilok</span></h4>
-                    <p class="text-neonCyan text-xs font-bold uppercase tracking-wider mb-2">นักวิจัย (หัวหน้าทีมวิจัย)<br>Principal Investigator</p>
+                    <h4 class="text-sm sm:text-base md:text-lg font-bold text-white mb-1">บรรพท ศิริเดชาดิลก<br><span class="text-xs sm:text-sm font-medium text-gray-400">Bunpote Siridechadilok</span></h4>
+                    <p class="text-neonCyan text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-2">นักวิจัย (หัวหน้าทีมวิจัย)<br>Principal Investigator</p>
                 </div>
                 <!-- Profile 2 -->
-                <div class="team-card text-center group w-full sm:w-1/2 md:w-1/4 lg:w-1/6 min-w-[200px]">
-                    <div class="relative w-40 h-40 mx-auto mb-6 rounded-full p-1 bg-charcoal hover:bg-gradient-to-tr from-electricPurple to-neonCyan transition-all">
+                <div class="team-card text-center group">
+                    <div class="relative w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 mx-auto mb-4 sm:mb-6 rounded-full p-1 bg-charcoal hover:bg-gradient-to-tr from-electricPurple to-neonCyan transition-all">
                         <img src="https://www.biotec.or.th/home/wp-content/uploads/elementor/thumbs/005551-pwirwvbamrd9gjhbqow1xmwfeehsdf9rnjhwkatp44.jpg" alt="ศุภโชค อ่อนน้อม" class="w-full h-full object-cover rounded-full border-4 border-obsidian transition-all">
                     </div>
-                    <h4 class="text-lg font-bold text-white mb-1">ศุภโชค อ่อนน้อม<br><span class="text-sm font-medium text-gray-400">Suppachoke Onnome</span></h4>
-                    <p class="text-electricPurple text-xs font-bold uppercase tracking-wider mb-2">ผู้ช่วยวิจัย<br>Research Assistant</p>
+                    <h4 class="text-sm sm:text-base font-bold text-white mb-1">ศุภโชค อ่อนน้อม<br><span class="text-xs font-medium text-gray-400">Suppachoke Onnome</span></h4>
+                    <p class="text-electricPurple text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-2">ผู้ช่วยวิจัย<br>Research Assistant</p>
                 </div>
                 <!-- Profile 3 -->
-                <div class="team-card text-center group w-full sm:w-1/2 md:w-1/4 lg:w-1/6 min-w-[200px]">
-                    <div class="relative w-40 h-40 mx-auto mb-6 rounded-full p-1 bg-charcoal hover:bg-gradient-to-tr from-biotechGreen to-neonCyan transition-all">
+                <div class="team-card text-center group">
+                    <div class="relative w-28 h-28 sm:w-36 sm:h-36 mx-auto mb-4 sm:mb-6 rounded-full p-1 bg-charcoal hover:bg-gradient-to-tr from-biotechGreen to-neonCyan transition-all">
                         <img src="https://www.biotec.or.th/home/wp-content/uploads/elementor/thumbs/000935-pwirwudgfxbz4xiow6hfd54yt0mf5q61beuf30v3ac.jpg" alt="อัมพร ศุภตระกูล" class="w-full h-full object-cover rounded-full border-4 border-obsidian transition-all">
                     </div>
-                    <h4 class="text-lg font-bold text-white mb-1">อัมพร ศุภตระกูล<br><span class="text-sm font-medium text-gray-400">Amporn Suphatrakul</span></h4>
-                    <p class="text-biotechGreen text-xs font-bold uppercase tracking-wider mb-2">ผู้ช่วยวิจัยอาวุโส<br>Senior Research Assistant</p>
+                    <h4 class="text-sm sm:text-base font-bold text-white mb-1">อัมพร ศุภตระกูล<br><span class="text-xs font-medium text-gray-400">Amporn Suphatrakul</span></h4>
+                    <p class="text-biotechGreen text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-2">ผู้ช่วยวิจัยอาวุโส<br>Senior Research Assistant</p>
                 </div>
                 <!-- Profile 4 -->
-                <div class="team-card text-center group w-full sm:w-1/2 md:w-1/4 lg:w-1/6 min-w-[200px]">
-                    <div class="relative w-40 h-40 mx-auto mb-6 rounded-full p-1 bg-charcoal hover:bg-gradient-to-tr from-gray-400 to-white transition-all">
+                <div class="team-card text-center group">
+                    <div class="relative w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 mx-auto mb-4 sm:mb-6 rounded-full p-1 bg-charcoal hover:bg-gradient-to-tr from-gray-400 to-white transition-all">
                         <img src="https://www.biotec.or.th/home/wp-content/uploads/elementor/thumbs/802059-pwirww94tlejs5fyl7aoi4nvzsd5l4dhzo5e1ksaxw.jpg" alt="รพิรัตน์ นันทโชคชวพันธ์" class="w-full h-full object-cover rounded-full border-4 border-obsidian transition-all">
                     </div>
-                    <h4 class="text-lg font-bold text-white mb-1">รพิรัตน์ นันทโชคชวพันธ์<br><span class="text-sm font-medium text-gray-400">Rapirat Nantachokchawapan</span></h4>
-                    <p class="text-gray-300 text-xs font-bold uppercase tracking-wider mb-2">ผู้ช่วยปฏิบัติงานวิจัย<br>Research Op. Assistant</p>
+                    <h4 class="text-sm sm:text-base md:text-lg font-bold text-white mb-1">รพิรัตน์ นันทโชคชวพันธ์<br><span class="text-xs sm:text-sm font-medium text-gray-400">Rapirat Nantachokchawapan</span></h4>
+                    <p class="text-gray-300 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-2">ผู้ช่วยปฏิบัติงานวิจัย<br>Research Op. Assistant</p>
                 </div>
                 <!-- Profile 5 -->
-                <div class="team-card text-center group w-full sm:w-1/2 md:w-1/4 lg:w-1/6 min-w-[200px]">
-                    <div class="relative w-40 h-40 mx-auto mb-6 rounded-full p-1 bg-charcoal hover:bg-gradient-to-tr from-neonCyan to-biotechGreen transition-all">
+                <div class="team-card text-center group">
+                    <div class="relative w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 mx-auto mb-4 sm:mb-6 rounded-full p-1 bg-charcoal hover:bg-gradient-to-tr from-neonCyan to-biotechGreen transition-all">
                         <img src="https://www.biotec.or.th/home/wp-content/uploads/elementor/thumbs/801276-pwirww94tlejs5fyl7aoi4nvzsd5l4dhzo5e1ksaxw.jpg" alt="นิตยา ศรีสุข" class="w-full h-full object-cover rounded-full border-4 border-obsidian transition-all">
                     </div>
-                    <h4 class="text-lg font-bold text-white mb-1">นิตยา ศรีสุข<br><span class="text-sm font-medium text-gray-400">Nittaya Srisuk</span></h4>
-                    <p class="text-neonCyan text-xs font-bold uppercase tracking-wider mb-2">ผู้ช่วยปฏิบัติงานวิจัย<br>Research Op. Assistant</p>
+                    <h4 class="text-sm sm:text-base md:text-lg font-bold text-white mb-1">นิตยา ศรีสุข<br><span class="text-xs sm:text-sm font-medium text-gray-400">Nittaya Srisuk</span></h4>
+                    <p class="text-neonCyan text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-2">ผู้ช่วยปฏิบัติงานวิจัย<br>Research Op. Assistant</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Research Outputs -->
-    <section id="publications" class="py-24 bg-charcoal/30 border-t border-white/5">
-        <div class="max-w-4xl mx-auto px-6 lg:px-8">
-            <div class="mb-12 flex justify-between items-center">
-                <h2 class="text-3xl font-bold text-white">Recent <span class="text-neonCyan">Publications</span></h2>
+    <section id="publications" class="py-16 md:py-24 bg-charcoal/30 border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-8 md:mb-12 flex justify-between items-center">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white">Recent <span class="text-neonCyan">Publications</span></h2>
                 <a href="#" class="text-sm text-gray-400 hover:text-white transition-colors">View All &rarr;</a>
             </div>
             
             <div class="space-y-4" id="publication-list">
                 
                 <!-- Paper 2 (2025) -->
-                <a href="https://pubs.acs.org/doi/10.1021/acsbiomedchemau.4c00071" target="_blank" class="block bg-obsidian rounded-xl p-6 border border-white/5 hover:border-white/20 transition-colors group cursor-pointer">
-                    <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+                <a href="https://pubs.acs.org/doi/10.1021/acsbiomedchemau.4c00071" target="_blank" class="block bg-obsidian rounded-xl p-4 sm:p-6 border border-white/5 hover:border-white/20 transition-colors group cursor-pointer">
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start sm:items-center">
                         <div class="bg-charcoal px-4 py-2 rounded-lg text-electricPurple font-mono text-sm border border-white/5 shrink-0">2025</div>
                         <div class="flex-1">
-                            <h4 class="text-lg font-bold text-white mb-2 group-hover:text-electricPurple transition-colors">Synthesis and Modification of Cordycepin-Phosphoramidate ProTide Derivatives for Antiviral Activity and Metabolic Stability</h4>
+                            <h4 class="text-base sm:text-lg font-bold text-white mb-2 group-hover:text-electricPurple transition-colors">Synthesis and Modification of Cordycepin-Phosphoramidate ProTide Derivatives for Antiviral Activity and Metabolic Stability</h4>
                             <p class="text-sm text-gray-400 mb-2">ACS Bio & Med Chem Au</p>
                             <div class="flex gap-2">
                                 <span class="text-xs px-2 py-1 rounded bg-white/5 text-gray-300">Antiviral</span>
@@ -348,11 +373,11 @@
                 </a>
 
                 <!-- Paper 3 (2023) -->
-                <a href="https://www.biorxiv.org/content/10.1101/2023.03.07.531617v1" target="_blank" class="block bg-obsidian rounded-xl p-6 border border-white/5 hover:border-white/20 transition-colors group cursor-pointer">
-                    <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+                <a href="https://www.biorxiv.org/content/10.1101/2023.03.07.531617v1" target="_blank" class="block bg-obsidian rounded-xl p-4 sm:p-6 border border-white/5 hover:border-white/20 transition-colors group cursor-pointer">
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start sm:items-center">
                         <div class="bg-charcoal px-4 py-2 rounded-lg text-biotechGreen font-mono text-sm border border-white/5 shrink-0">2023</div>
                         <div class="flex-1">
-                            <h4 class="text-lg font-bold text-white mb-2 group-hover:text-biotechGreen transition-colors">Functional analysis of flavivirus replicase by deep mutational scanning of dengue NS5</h4>
+                            <h4 class="text-base sm:text-lg font-bold text-white mb-2 group-hover:text-biotechGreen transition-colors">Functional analysis of flavivirus replicase by deep mutational scanning of dengue NS5</h4>
                             <p class="text-sm text-gray-400 mb-2">bioRxiv</p>
                             <div class="flex gap-2">
                                 <span class="text-xs px-2 py-1 rounded bg-white/5 text-gray-300">Deep Mutational Scanning</span>
@@ -366,11 +391,11 @@
                 </a>
 
                 <!-- Paper 1 (2021) -->
-                <a href="https://pubmed.ncbi.nlm.nih.gov/33969146/" target="_blank" class="block bg-obsidian rounded-xl p-6 border border-white/5 hover:border-white/20 transition-colors group cursor-pointer">
-                    <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/33969146/" target="_blank" class="block bg-obsidian rounded-xl p-4 sm:p-6 border border-white/5 hover:border-white/20 transition-colors group cursor-pointer">
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start sm:items-center">
                         <div class="bg-charcoal px-4 py-2 rounded-lg text-neonCyan font-mono text-sm border border-white/5 shrink-0">2021</div>
                         <div class="flex-1">
-                            <h4 class="text-lg font-bold text-white mb-2 group-hover:text-neonCyan transition-colors">Potent programmable antiviral against dengue virus in primary human cells by Cas13b RNP with short spacer and delivery by VLP</h4>
+                            <h4 class="text-base sm:text-lg font-bold text-white mb-2 group-hover:text-neonCyan transition-colors">Potent programmable antiviral against dengue virus in primary human cells by Cas13b RNP with short spacer and delivery by VLP</h4>
                             <p class="text-sm text-gray-400 mb-2">Molecular Therapy Methods & Clinical Development</p>
                             <div class="flex gap-2">
                                 <span class="text-xs px-2 py-1 rounded bg-white/5 text-gray-300">Dengue Virus</span>
@@ -384,11 +409,11 @@
                 </a>
 
                 <!-- Paper 4 (2018) -->
-                <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0194399" target="_blank" class="block bg-obsidian rounded-xl p-6 border border-white/5 hover:border-white/20 transition-colors group cursor-pointer">
-                    <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+                <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0194399" target="_blank" class="block bg-obsidian rounded-xl p-4 sm:p-6 border border-white/5 hover:border-white/20 transition-colors group cursor-pointer">
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start sm:items-center">
                         <div class="bg-charcoal px-4 py-2 rounded-lg text-neonCyan font-mono text-sm border border-white/5 shrink-0">2018</div>
                         <div class="flex-1">
-                            <h4 class="text-lg font-bold text-white mb-2 group-hover:text-neonCyan transition-colors">Multi-color fluorescent reporter dengue viruses with improved stability for analysis of a multi-virus infection</h4>
+                            <h4 class="text-base sm:text-lg font-bold text-white mb-2 group-hover:text-neonCyan transition-colors">Multi-color fluorescent reporter dengue viruses with improved stability for analysis of a multi-virus infection</h4>
                             <p class="text-sm text-gray-400 mb-2">PLOS One</p>
                             <div class="flex gap-2">
                                 <span class="text-xs px-2 py-1 rounded bg-white/5 text-gray-300">Virology</span>
@@ -405,25 +430,25 @@
     </section>
 
     <!-- Contact & Footer -->
-    <footer id="contact" class="bg-obsidian border-t border-white/10 pt-20 pb-10 relative overflow-hidden">
+    <footer id="contact" class="bg-obsidian border-t border-white/10 pt-12 md:pt-20 pb-8 md:pb-10 relative overflow-hidden">
         <!-- Abstract shape -->
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-neonCyan/5 rounded-full blur-[100px] pointer-events-none"></div>
         
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Collaborate With <span class="text-neonCyan">Us</span></h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">We are actively seeking academic and industry partnerships to translate our editing tools into clinical applications.</p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-10 md:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 md:mb-4">Collaborate With <span class="text-neonCyan">Us</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">We are actively seeking academic and industry partnerships to translate our editing tools into clinical applications.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-10 md:mb-16">
                 
                 <!-- Left Column: Academic Partners -->
-                <div class="bg-charcoal/30 p-8 rounded-3xl border border-white/5 backdrop-blur-sm">
+                <div class="bg-charcoal/30 p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-white/5 backdrop-blur-sm">
                     <h3 class="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">Academic Partners</h3>
                     <div class="space-y-6">
                         <!-- Contact Person -->
-                        <div class="bg-obsidian/50 p-6 rounded-2xl border border-white/5">
-                            <p class="font-bold text-white text-lg mb-3">Dr. Bunpote Siridechadilok</p>
+                        <div class="bg-obsidian/50 p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-white/5">
+                            <p class="font-bold text-white text-base sm:text-lg mb-3">Dr. Bunpote Siridechadilok</p>
                             <div class="flex items-center gap-3 text-gray-300">
                                 <div class="text-electricPurple shrink-0">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
@@ -433,43 +458,43 @@
                         </div>
 
                         <!-- Location 1 (NSTDA) -->
-                        <div class="flex items-start gap-4 text-gray-300 p-6 bg-obsidian/50 rounded-2xl border border-white/5">
+                        <div class="flex items-start gap-3 sm:gap-4 text-gray-300 p-4 sm:p-6 bg-obsidian/50 rounded-xl sm:rounded-2xl border border-white/5">
                             <div class="mt-1 text-neonCyan shrink-0">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                             </div>
                             <div>
-                                <p class="font-bold text-white text-sm uppercase tracking-wider mb-2">BIOTEC / NSTDA</p>
-                                <p class="text-sm text-gray-400 leading-relaxed">Frontier Biodesign and Biomolecular Engineering Research Team (IFRT)<br>113 Thailand Science Park, Phahonyothin Road<br>Khlong Nueng, Khlong Luang<br>Pathum Thani 12120, Thailand</p>
+                                <p class="font-bold text-white text-xs sm:text-sm uppercase tracking-wider mb-2">BIOTEC / NSTDA</p>
+                                <p class="text-xs sm:text-sm text-gray-400 leading-relaxed">Frontier Biodesign and Biomolecular Engineering Research Team (IFRT)<br>113 Thailand Science Park, Phahonyothin Road<br>Khlong Nueng, Khlong Luang<br>Pathum Thani 12120, Thailand</p>
                             </div>
                         </div>
 
                         <!-- Location 2 (Siriraj) -->
-                        <div class="flex items-start gap-4 text-gray-300 p-6 bg-obsidian/50 rounded-2xl border border-white/5">
+                        <div class="flex items-start gap-3 sm:gap-4 text-gray-300 p-4 sm:p-6 bg-obsidian/50 rounded-xl sm:rounded-2xl border border-white/5">
                             <div class="mt-1 text-biotechGreen shrink-0">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                             </div>
                             <div>
-                                <p class="font-bold text-white text-sm uppercase tracking-wider mb-2">Siriraj Hospital</p>
-                                <p class="text-sm text-gray-400 leading-relaxed">Division of Dengue Hemorrhagic Fever Research<br>12nd Floor Adulyadejvikrom Building, Faculty of Medicine Siriraj Hospital<br>No. 2 Wanglang Road Bangkoknoi<br>Bangkok 10700, Thailand</p>
+                                <p class="font-bold text-white text-xs sm:text-sm uppercase tracking-wider mb-2">Siriraj Hospital</p>
+                                <p class="text-xs sm:text-sm text-gray-400 leading-relaxed">Division of Dengue Hemorrhagic Fever Research<br>12nd Floor Adulyadejvikrom Building, Faculty of Medicine Siriraj Hospital<br>No. 2 Wanglang Road Bangkoknoi<br>Bangkok 10700, Thailand</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Right Column: Industry Partner -->
-                <div class="bg-charcoal/30 p-8 rounded-3xl border border-white/5 backdrop-blur-sm h-fit">
+                <div class="bg-charcoal/30 p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-white/5 backdrop-blur-sm h-fit">
                     <h3 class="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">Industry Partner</h3>
                     <div class="space-y-6">
                         <!-- Industry Location -->
-                        <div class="flex items-start gap-4 text-gray-300 p-6 bg-obsidian/50 rounded-2xl border border-white/5">
+                        <div class="flex items-start gap-3 sm:gap-4 text-gray-300 p-4 sm:p-6 bg-obsidian/50 rounded-xl sm:rounded-2xl border border-white/5">
                             <div class="mt-1 text-electricPurple shrink-0">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                             </div>
                             <div class="w-full">
-                                <p class="font-bold text-white text-sm uppercase tracking-wider mb-2">ALPHABET BIOSCIENCE CO., LTD.</p>
-                                <p class="text-sm text-gray-400 leading-relaxed mb-4">95 Soi Phetkasem 3, Yak 3-2<br>Khwaeng Wat Tha Phra, Khet Bangkok Yai<br>Bangkok 10600, Thailand</p>
+                                <p class="font-bold text-white text-xs sm:text-sm uppercase tracking-wider mb-2">ALPHABET BIOSCIENCE CO., LTD.</p>
+                                <p class="text-xs sm:text-sm text-gray-400 leading-relaxed mb-4">95 Soi Phetkasem 3, Yak 3-2<br>Khwaeng Wat Tha Phra, Khet Bangkok Yai<br>Bangkok 10600, Thailand</p>
                                 
-                                <div class="bg-obsidian/30 rounded-lg p-4 border border-white/5 space-y-2 text-xs font-mono text-gray-400">
+                                <div class="bg-obsidian/30 rounded-lg p-3 sm:p-4 border border-white/5 space-y-2 text-[10px] sm:text-xs font-mono text-gray-400">
                                     <div class="flex justify-between border-b border-white/5 pb-2">
                                         <span class="text-gray-500">Registration No.</span>
                                         <span class="text-white">0105568106834</span>
@@ -490,11 +515,11 @@
                 
             </div>
             
-            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <div class="text-2xl font-bold tracking-tighter text-white">
-                    <span class="text-neonCyan">CRISPR</span>LAB
+            <div class="border-t border-white/5 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-xl md:text-2xl font-bold tracking-tighter text-white">
+                    <span class="text-electricPurple">BS</span><span class="text-neonCyan">-CRISPR</span>LAB
                 </div>
-                <p class="text-gray-500 text-sm">&copy; 2026 CRISPR Lab @ BIOTEC/NSTDA. All rights reserved.</p>
+                <p class="text-gray-500 text-xs sm:text-sm">&copy; 2026 CRISPR Lab @ BIOTEC/NSTDA. All rights reserved.</p>
             </div>
         </div>
     </footer>
